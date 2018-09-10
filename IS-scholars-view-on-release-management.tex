@@ -1,0 +1,491 @@
+% \documentclass[a4paper,12pt,notitlepage]{article}
+% 
+% 
+% \usepackage[utf8]{inputenc} %unicode support
+% \usepackage[english]{babel}
+% 
+% % Load metadata 
+% \input{./meta-data.tex}  
+% 
+% \input{./latextoolsforwritingacademicpapers/bibliographies.config.tex}
+% 
+% 
+% 
+% 
+% 
+% \iftoggle{biber_biblatex}{
+%     
+%   %\usepackage[style=numeric,backend=biber,sorting=none]{biblatex}
+%   %\usepackage[style=ieee,backend=biber]{biblatex} 
+%   % APA for EJIS 
+%    \usepackage[style=apa,backend=biber,natbib=true,bibencoding=utf8]{biblatex}
+%    \DeclareLanguageMapping{english}{english-apa}
+%   %\usepackage[style=alphabetic,citestyle=authoryear,backend=biber,natbib=true,bibencoding=utf8]{biblatex}
+%     \addbibresource{./references.bib}
+% 
+%     \addbibresource{./bibliographicreferencesforwritingacademicpapers/JoseTeixeiraPub.bib}
+%     \addbibresource{./bibliographicreferencesforwritingacademicpapers/release-management.bib}
+%     \addbibresource{./bibliographicreferencesforwritingacademicpapers/OpenStackResearch.bib}
+%     }{ \typeout{Use biber_biblatex in APA for EJIS} \stop} 
+% 
+% 
+% 
+% \usepackage[utf8]{inputenc}
+% \usepackage[english]{babel}
+% \usepackage[]{csquotes}
+% 
+% \usepackage{fontenc}
+% \usepackage{graphicx}
+% 
+% \usepackage[]{hyperref}
+% 
+% 
+% 
+% 
+% \author{Jose Teixeira}
+% \date{08/22/18}
+% 
+% \begin{document}
+%  
+ 
+ 
+ 
+ 
+ 
+ \section{What are releases} 
+ 
+ ITIL language 
+
+ 
+ 
+ ``a significant change'' \citep{Bon2011}
+ 
+ 
+ ``Simply put, a release (also called a release package) is a set of authorized changes to an IT service'' 
+ 
+ a release (also called a release package) is a set of authorized changes \citep{GovernmentCommerce2005}
+ 
+ 
+ ``one or more changes that are built, tested and deployed'' \citep{Davies2016}
+ 
+ 
+ ``A release is a set of new or changed configuration items that are tested and will be implemented into production togethr''  
+ 
+ 
+ `release refers  to  the  distribution  of  a  software  configuration  item  outside the development activity. This  includes  internal 
+releases as well as distribution to customers. When  different versions of a software item are available 
+for  delivery  (such  as  versions  for  different  platforms  or  versions  with  varying  capabilities),  it  is  
+frequently necessary to recreate specific versions 
+and  package  the  correct  materials  for  delivery  of  
+the version''.  In Swe book
+
+``Some software releases  had  to go back to the development stage, jeopardizing project schedules''  \citep{WinklerKettunen2018}
+ 
+ 
+ 
+ 
+ \section{What is release management?}
+ 
+ 
+ ``Release management is a process that describes a controlled method of providing
+consultative guidance, scheduling, and governance of changes to a specific service
+or product.''  \citep{Howard2016}
+
+
+``delivers quality releases on time, on budget, and within requirements'' \citep{Howard2016}
+ 
+ 
+ `
+On itil languagge 
+    ``To create, test, verify, and deploy release packages
+    To manage organization and stakeholder change
+    To ensure that new or changed services are capable of delivering the agreed utility and warranty
+    To record and manage deviations, risks, and issues related to the new or changed service and take necessary corrective action
+    To ensure there is knowledge transfer to enable customers and users to optimize use of services that support their business activities
+''
+
+
+``Software  release  management  encompasses  the  
+identification,  packaging,  and  delivery  of  the 
+elements  of  a  product—for  example,  an  execut
+-
+able program, documentation, release notes, and 
+configuration  data.  Given  that  product  changes 
+can occur on a continuing basis, one concern for 
+release management is determining when to issue 
+a release. The severity of the problems addressed 
+by the release and measurements of the fault den
+-
+sities  of  prior  releases  affect  this  decision.  The  
+packaging task must identify which product items 
+are  to  be  delivered  and  then  select  the  correct  
+variants of those items, given the intended appli
+-
+cation of the product. The information document
+-
+ing  the  physical  contents  of  a  release  is  known  
+as  a  version  description  document
+.
+  The  release  
+notes typically describe new capabilities, known 
+problems,  and  platform  requirements  necessary  
+for proper product operation. The package to be 
+released  also  contains  installation  or  upgrading  
+instructions. The latter can be complicated by the 
+fact that some current users might have versions 
+that are several releases old. In some cases, release 
+management might be required in order to track 
+distribution  of  the  product  to  various  customers  
+or target systems—for example, in a case where 
+the supplier was required to notify a customer of 
+newly  reported  problems.  Finally,  a  mechanism  
+to ensure the integrity of the released item can be 
+implemented—for example by releasing a digital 
+signature with it.
+  A  tool  capability  is  needed  for  supporting  
+these  release  management  functions.  It  is  use
+-
+ful to have a connection with the tool capability 
+supporting the change request process in order to 
+map release contents to the SCRs that have been 
+received. This tool capability might also maintain 
+information  on  various  target  platforms  and  on  
+various customer environments'' sweebook v3 chapter 6 \citep{Society2014}
+
+ 
+ ``concerned with the identification, packaging, and delivery of product’s elements'' \citep{KakolaKoivulahtiOjala_et_al2010}
+ 
+ 
+ 
+``During each
+cycle, feedback is collected from key stakeholders and used to plan and execute the next cycle(s).
+In addition to the traditional project management activities, release management determines how
+many cycles and internal releases are needed (for testing purposes) in a release project, refines the
+requirements identified during product line roadmapping, allocates the requirements to the most
+appropriate cycles, and schedules the cycles. It thus ensures that internal and external releases
+meet the (specified and managed subset of) requirements identified and agreed upon in the front
+end of product development.`` \citep{KakolaKoivulahtiOjala_et_al2010}
+
+
+ \section{What release management its not} 
+ 
+ he basic difference is that release management takes into consideration the holistic
+approach of the entire service, and project management has a specific focus with a
+beginning and an end \citep{Howard2016} 
+
+patch management on other hand is about fix vulnerabilities in existing. No new feture, but reducing the window of oportinity for exploration 
+
+\citep{CavusogluCavusoglu_et_al2008}
+
+
+  \section{Why is release management important}
+  
+  
+
+  
+  
+  ''In response to the lack of focus on management issues, the Senior Technical Consultant conducted a comprehensive analysis of the entire Systems and Development Operations and presented a set of recommendations to improve management control. Those recommendations formed the Software Delivery System (SDS) initiative, intended to bring stability and focus into the reactive and increasingly chaotic environment.
+The recommendations were: a , v 
+    Create a Release Management Team''   \citep{CustodioThorogood_et_al2006} important for sussess. 
+    
+    Financial benefits and Organizational readiness  \citep{Howard2016}
+    implementation success \citep{TammSeddon_et_al2015}.
+    Competitive advantage \citep{IravaniDasu_et_al2012}.
+    
+
+
+    
+ 
+ \section{How is release management organized} 
+ 
+ 
+ \subsection{feature planning}
+ 
+ 
+ 	“At the beginning of each development cycle we have a kind of an open discussion with our community about what should be the features that should be targeted in the next release. We do that leveraging the forum, issue tracking system, but we also use user-voice to do voting so we have an open voting.” \citep{DeodharSaxena_et_al2012} OpenBravo way.
+ 	
+ 	velopment process artifacts such as product roadmap were articulated through consensus building across community members supported by a formal process of polling for inclusion/exclusion of functionality in the ongoing release plan. These activities often included external as well as internal actors.  \citep{DeodharSaxena_et_al2012} OpenBravo way.
+ 	
+ 	
+\subsection{deployment a total quality systems}
+ 
+A direct link to the Release and deployment management can be found in the Service Transition
+function within the ITIL lifecycle and other Continual Service Improvement (CSI)  and Service Strategy concepts of ITIL \citep{Howard2016} 
+ 
+ 
+  
+ 
+ . Releases can be realized through various organizational arrangements such as release projects in organizations
+structured around products [34] and permanent release teams in organizations responsible for the
+long-term development and maintenance of strategic software and hardware assets  \citep{KakolaKoivulahtiOjala_et_al2010}
+
+
+''As discussed above, surveillance audit has highlighted the need for various procedural improvements and one of these has been in the area of our product release procedures. We have increasingly formalised the relationship between the development team and the release management team in order to introduce a greater measure of independence into the review and testing of the product prior to its issue. A pre-release audit has been introduced which again uses the concept of a QA and a technical auditor to review the product package (i.e. the code and its associated documentation) prior to release. The job of the technical auditor is to review the functional capability of the code, to ensure that any new features are adequately specified and documented, to check that test coverage is sufficient and to confirm that the User documentation is comprehensive and clear. The introduction of these procedures adds value at the pre-release stage by increasing the checking of code and documents prior to issue, and by reviewing the adequacy of testing before release. In the long term, it is our intention to increase the involvement of the release management team during the earlier stages of the software life-cycle to assist with reviewing and testing of documents and code.`` \citep{Walker1970}
+
+
+
+\section{ What affects release management}
+
+\subsection{software reuse and dependencies}
+software reuse and dependencies on other software projects\citep{VitharanaKing_et_al2010}
+
+\subsection{performance prior releases}
+
+performance of prior releases \citep{Society2014} 
+
+\subsection{Running platforms such as hardware}
+
+Hardware, multiple, platforms the longer the release cycles will be. 
+
+\subsection{requirements}
+
+Requirements \citep{MullerHerbst_et_al2006,StarkOman_et_al1999,KakolaKoivulahtiOjala2009,KakolaKoivulahtiOjala_et_al2010}
+
+
+\subsection{Testing}
+
+\subsection{Planning}
+
+\subsection{Communication, documentation and discussion}
+
+Communication, Information Sharing, Discussion, Specifications, Architercure, Existing documentation along with differe human aspects, tesing, bug-fixing, and feature requestes  \citep{DeodharSaxena_et_al2012}. 
+
+\subsection{Human aspects}
+
+Nature of the motivations to contribute (voluentear altruism vs. contractor)
+
+
+\subsection{Organizational aspects}
+
+''Also, there were public discussion platforms where users could discuss various issues related to product. These discussions were not capsuled but were fed back to the product development and release management. These activities were not peripheral to Openbravo’s business model but were integrated into its operationalization.
+
+
+
+
+    Our public Wiki where project has a section on the Wiki where there are open specifications, open technical designs and everything is openly discussed and openly documented so that the people in the community can monitor the progress […] It is the loop that feeds itself because once they test, they report issues, raise new ideas, new feature requests and that comes into the scheduling of the next release.[Chief Technology Officer, Openbravo ERP] \citep{DeodharSaxena_et_al2012}
+    
+    
+    \citet{Krishnan1994}  pointed out that release management depends on the SIZE , PROCESS , ENTROPY and FEATURES of a given release. 
+    
+
+    
+    \subsection{Adoption / deployment costs}
+    
+    ``releasing frequently may work less effectively in projects with higher adoption costs'' \citep{ChenKrishnan_et_al2013}
+    
+    
+    ``From  the  demand  side,  users  of  OSS  incur  costs  while  adopting  the  new  releases.  If  a  project  releases  too 
+frequently,  the  accumulated  adoption  cost  may  offset  the  benefit  from  quality  improvement.  This 
+would leave the project in a worse position in competition'' \citep{ChenKrishnan_et_al2013}
+
+
+ 
+    
+ 
+    \subsection{Release strategy }
+    
+    
+   `` one  crucial  factor  that  a  project  development  team  can  control:  the  release  strategy,  which refers  to  the  release  frequency  and  quality  improvements  by  the  OSS  teams`` \citep{ChenKrishnan_et_al2013}
+ 
+ 
+ \section{Why releasing to fast is bad}
+ 
+ 
+ 
+``as the release frequency  increases,  the  project  team  has  less  time to  incorporate  the  community  contributions. 
+Therefore the quality that the project gets from the community contributions actually decreases'' \citep{ChenKrishnan_et_al2013}
+
+``as  the  team  speeds  up  the  release  frequency,  the  community 
+might  not  be  able  to  keep  up  with  the  fast  release 
+iterations.  Even  though  they  still  contribute,  the 
+contribution quality actually decreases. Therefore, releasing too fast may backfire.'' \citep{ChenKrishnan_et_al2013}
+
+``lower quality'' 
+
+``less time to do things right'' 
+
+''time to integrate more disruptive changes`` 
+
+``time to integrate with dependecies (e.g. other projects)
+ 
+ ''paying customer what benefots (big changed) to update their software`` 
+ 
+ \section{Why is different in OSS}
+ 
+ 
+ 
+ \subsection{Transparency }
+ 
+ Both internal and external release cycles are transparent \citep{KakolaKoivulahtiOjala_et_al2010}. \\ 
+ 
+ ''Release plans are well defined and kept in team rooms`` \citep{VitharanaKing_et_al2010}
+ 
+ 
+ \subsection{Released to the web vs Release to customer premises}
+ 
+ In commercial: 
+     What went into it
+    Where it went
+    Why it went there
+    How to deal with it when bugs are reported
+ 
+  
+ \subsection{Organization boundaries}
+ organizational boundaries \\ 
+ 
+ 
+ \subsection{Organizational strategy vs strategies}
+ 
+ The strategies vs IT strategy (ITIL) 
+
+ \subsection{Understanding of software components and its boundaries}
+
+ Knowledge on the boundaries of the software \\ 
+ 
+ \subsection{ Ownership }
+ 
+ Ownership, defining the team who is ultimately responsible for the release.
+ 
+ 
+
+ 
+ \subsection{decision making}
+ 
+ 
+  Release cycles are decided multilaterally, not as in IT outsourcing where practiciienr IT outsource  \\ 
+
+ 
+ \subsection{Inclusiveness}
+ 
+ 
+ 
+ 
+ 
+ Openbravo ERP was no exception to this. Knowledge sharing was facilitated through both the technological and process-oriented interventions. Development infrastructure of Openbravo was publicly accessible where users could review the progress and share their feedback. Development process artifacts such as product roadmap were articulated through consensus building across community members supported by a formal process of polling for inclusion/exclusion of functionality in the ongoing release plan. \citep{DeodharSaxena_et_al2012} 
+ 
+
+ \subsection{release planning}
+ 
+ Also, there were public discussion platforms where users could discuss various issues related to product. These discussions were not capsuled but were fed back to the product development and release management. These activities were not peripheral to Openbravo’s business model but were integrated into its operationalization.\citep{DeodharSaxena_et_al2012}.
+ 
+ 
+ \subsection{End-of-life support }
+ 
+ Mentioned in contracts, distribution and end-user agreements. 
+ 
+ ''End-of-life support (terms/conditions) for 
+a given product release is defined well in 
+advance.`` vs  ''Does not apply``  \citep{VitharanaKing_et_al2010}
+
+
+In summary, Openbravo ERP developed differentiation between their cunity and enterprise editions at both the functionality- and support-level. However, both the editions depend on the same code-base \citep{DeodharSaxena_et_al2012}
+omm
+''Our professional edition customers have a warranty that the bugs that they report will be fixed in a pre-defined period, and secondly, they have a warranty that bugs will be back-ported to their previous release of the Openbravo system. Therefore, we [provide] backward support [for] several major releases. For the community [edition], we treat [bugs] and resolve them but the community doesn’t have warranty [of definite time period of fixing issues][Product Development Manager, Openbravo; Classification: Action].`` 
+\citep{DeodharSaxena_et_al2012}
+
+
+
+ 
+ \subsection{Amount of changes per release}
+ 
+ 
+ As pointed out by made at IBM, a company enganging in both proprietart nd open-source,  proprierary software '' Each 
+release usually involves significant 
+feature/defect changes.`` while in open-source, ''Code is generally released 
+frequently with smaller incremental 
+changes in each release.``. To our view i, the hipotesies that proprietart software is release less frequentlu and with bigger varieation remains untested. However, it makes sense from the point of view that proprietar oftware relies more on paying customers. This in the sense that paying custorms would expet a numer of siginigance changes (e.g., new features) to pay for the an software update. 
+  
+  
+  
+ 
+  
+  
+ \subsubsection{Permission to changes} 
+ 
+ In proprierary software, anyone wishing to change the software (e.g., implementing a new feature) might be subjected form others do do so. The source code might be unaccessible or controlled by other organizational functions (e.g., marketing and product strategy).  As pointed out by  \citet{VitharanaKing_et_al2010}
+ 
+ 
+''needs a few changes, in a closed source world, you’d be off to the negotiation table with the other 
+team saying, “please add function a and b,” and if that doesn’t add up with their  
+market  management  team,  you  never  get  the  function  into  the  code  that  you 
+want and you’re at a stalemate. You build essentially fragile, release dependen-
+cies on code that hasn’t been implemented. If it’s in Community Source and 
+the code is there, you have the freedom to extend what is there, contribute to it, 
+and contribute it back. \citep{VitharanaKing_et_al2010}
+ 
+ 
+ 
+     \section{Who said rel-management OSS is important before }
+    
+    
+    ``one important mechanism, the release timing, has not been well studied'' .  It is not clear how such decisions are made (Crowston et al. 2012)
+    
+    
+ 
+ \section{What we know in OSS release management}
+ 
+ 
+ ``fast releases may work less effectively in projects with weak community contributions'' \citep{ChenKrishnan_et_al2013}
+ 
+ ``the restrictiveness  of  open  source  license  moderates  the  effectiveness of releasing  early and often.''  \citep{ChenKrishnan_et_al2013}
+ 
+ ``release  frequency  is  positively associated with download market share, the relation ship is not linear.'' \citep{ChenKrishnan_et_al2013}
+ 
+ 
+ 
+    
+    ``From  the  demand  side,  users  of  OSS  incur  costs  while  adopting  the  new  releases.  If  a  project  releases  too 
+frequently,  the  accumulated  adoption  cost  may  offset  the  benefit  from  quality  improvement.  This 
+would leave the project in a worse position in competition'' \citep{ChenKrishnan_et_al2013}
+
+ 
+``as the release frequency  increases,  the  project  team  has  less  time to  incorporate  the  community  contributions. 
+Therefore the quality that the project gets from the community contributions actually decreases'' \citep{ChenKrishnan_et_al2013}
+
+``as  the  team  speeds  up  the  release  frequency,  the  community 
+might  not  be  able  to  keep  up  with  the  fast  release 
+iterations.  Even  though  they  still  contribute,  the 
+contribution quality actually decreases. Therefore, releasing too fast may backfire.'' \citep{ChenKrishnan_et_al2013}
+
+
+
+
+ 
+ \section{Rel. manag and the  ITIL process}
+
+ \citet{CaterSteelTan_et_al2006} as a process described described in ITIL.  Something ignored in CobitT, CMMI or ISO 9001 process frameworks
+ 
+ 
+ Release Management in v2
+ Release  and deployment  management in ITIL v3 
+ 
+  Release and Deployment Management
+
+    ''Essentially, the activities and process objectives of the Release and Deployment Management process in ITIL V3 are identical to Release Management in ITIL V2
+    ITIL V3 provides considerably more details in the areas of Release planning and testing; this led to the addition of two dedicated processes in ITIL V3 which were subsumed under Release Management in the previous ITIL version:
+        Project Management (Transition Planning and Support)
+        Service Validation and Testing``
+        
+
+  \citet{McNaughtonRay_et_al2010} developed metrics on release management. 
+ 
+ 
+ 
+ \section{tightly controlled sub-contracting relationships with a clear client-supplier roles}
+ 
+ Bla
+ \citet{BaarsHorakh_et_al2007} as ITIL in a outsourcing domain.vendor controlled.  \\ 
+ \citet{LuKakola2011} on testing domain vendor controlled outsourcing scenario as well. \\ 
+
+  ''the customer determines the frequency and content of the releases.``, 
+  ''the provider delivers the releases at mutually agreed time frames, conforming to the specifications`` 
+  ''the provider will report in a timely way on any regularities and delays``  \cite[p.45][]{Chittenden1970}
+  
+ 
+ 
+%  \iftoggle{biber_biblatex}{
+%   \printbibliography
+%   }{ \typeout{Use biber_biblatex in APA for EJIS} \stop }
+% 
+% 
+% \end{document}

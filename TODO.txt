@@ -1,0 +1,43 @@
+
+Add 3 release management quotations, 
+Refactor the tools section into the diagram
+Fix all references 
+Digest ISR, EJIS, JAIS and ISJ articles on release managemnt 
+Read the process section section to improve organization 
+Refactor introduction  and freeze 
+Add on what is release management 
+Add on what impaxcts release management 
+Add on OpenStack what is release management 
+Close the results, organization and freeze 
+Add freeze 
+Add SI editors pub. 
+Stabilisty 
+Add an view on software ecosystems
+Mention problems 
+
+
+
+Write down merits and discussion based upon it
+
+* Hightlight the importance of release management, and review its conceptual roots of what is a release and release management 
+* Distinguish FLOSS vs normal 
+* compile problems 
+
+
+Write down impact. 
+** Method framewroks should have a release management section 
+** ISD methodologies should have a release managment section 
+
+###########3 After submitting ###############3 
+Fix http://in953.kelon.org/archives/in953/2004/papers/ISJAFrameworkForCreatingHybrid-OpenSourceSoftwareCommunities.pdf date 2018 to 2012 
+in bi database release management 
+
+
+########### Digest this blogs and twitter accounts on release management  ############# 
+
+https://www.markshuttleworth.com/archives/tag/release-management
+https://twitter.com/tcarrez?lang=en
+https://twitter.com/doughellmann
+https://doughellmann.com/blog
+https://ttx.re/
+
